@@ -142,12 +142,33 @@ main > section {
     .teams{
         flex-direction: column;
     }
-    .team-img-container{
+    .team-img-container, 
+    .facts-container, 
+    .sponsors-company{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .facts-container, .sponsors-company{
+        justify-items: center;
+        gap: 24px;
+    }
+
+    .sponsors-company{
+        justify-items: center;
+        gap: 50px;
     }
     .our-features{
         margin-left: 20px;
     }
+}
+.sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsors-company{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
 }
 
 /* medium size sevice */
